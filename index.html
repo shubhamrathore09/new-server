@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+           
+            width: 30%;
+            height: auto;
+            margin: auto;
+            border: double ;
+            background-color: blue;
+            color: white;
+            padding: 50px 10px;
+            border-radius: 20px ;
+            margin-top: 50px;
+        }
+        .main>input{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        .main>button{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 10px;
+            cursor: pointer;
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+        }
+        #result{
+            text-align: center;
+        }
+        @media (max-width:500px) and (min-width:100px){
+            .main{
+                width: 100%;
+                padding: 0px 10px;
+                padding: 50px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="main">
+        <label for="">Boy Name</label><br>
+        <input type="text" id="mname" placeholder="Boy Name" required min-length="3"/><br>
+        <label for="">Girl Name</label><br>
+        <input type="text" id="wname" placeholder="Girl Name" required min-length="3"  /><br>
+        <button onclick="submit()">Check</button>
+        <div>
+            <h3 id="result"></h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="index.js"></script>
